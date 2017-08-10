@@ -1,0 +1,211 @@
+.appWrapper, html, body{
+        min-height: 100vh;
+         position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: Exo\ 2,Helvetica,Arial,Lucida,sans-serif;
+        background: #eee;
+    }
+    .logoHeader{
+        display: inline-block;
+        height: 20px;
+        width: 100px;
+        background: url('./assets/csealogonocircledark.png') no-repeat;
+        background-size: contain;
+    }
+
+    .lists{
+        font-family: Open Sans;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+        color: #38b7cd;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+
+         color: #38b7cd;
+        background-color: transparent;
+    }
+
+    .banner {
+      text-align: center;
+      color: #EEE;
+      padding-top: 53px;
+      background: url("./assets/banner.jpg") no-repeat fixed center 0;
+      background-size: cover;
+      //background-blend-mode: luminosity;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+      min-height: 35vh;
+      margin-bottom: 10px;
+    }
+
+    header {
+        margin: 20px 0;
+    }
+
+    header h1 {
+      font-weight: 600;
+      margin: 10px;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, .6), 2px 3px 5px rgba(0, 0, 0, .4);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      @media(max-width: 767px) {
+        font-size: 30px;
+      }
+    }
+
+    header h4 {
+      font-weight: 400;
+      margin: 4px;
+    }
+
+
+    .logoWrapper {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+
+    @media(max-width: 767px) {
+      height: 160px;
+      width: 160px;
+    }
+
+    position: relative;
+    bottom: -40px;
+    margin-top: -40px;
+    z-index: 0;
+    }
+
+
+    .CSEALogo {
+          display: inline-block;
+    height: 200px;
+    width: 200px;
+         position: relative;
+    bottom: -40px;
+    margin-top: -40px;
+    z-index: 0;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+    }
+
+    .footer {
+        display: block;
+        background: #333;
+        border-top: 3px solid hsla(0,0%,40%,.15);
+        width: 100%;
+        height: 210px;
+        position: absolute;
+        bottom: 0;
+        padding: 30px 0;
+        font-size: 1.1em;
+        color: #fff;
+    }
+
+    .bodyHeader{
+        margin-top: 3em;
+        border-bottom: 5px solid #2fa7bc;
+        padding: 0 1px 10px;
+        position: relative;
+        margin-bottom: 10px;
+        }
+
+    .bodyHeader h3{
+        font-weight: 700;
+        font-size: 2.5em;
+        margin: 0;
+    }
+    .bodyHeader a{
+        background: #2fa7bc;
+        color: #fff;
+        padding: 10px;
+        margin-bottom: -10px;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+    .bodyHeader a:hover{
+        text-decoration: none;
+    }
+     .bodyHeader span:hover{
+        text-decoration: none;
+    }
+
+    .post {
+      background: white;
+      padding: 20px;
+      margin: 30px 0;
+      color: black;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+    }
+
+    .post header {
+        display: block;
+        margin-bottom: 7px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(51,51,51,.2);
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+
+    .post header .title {
+        display: inline-block;
+        font-weight: 400;
+        margin: 0 0 7px;
+        color: black;
+        @media(max-width: 767px) {
+        font-size: 28px;
+        }
+    }
+
+     .post header .subtitle {
+          margin: 0;
+          font-weight: 400;
+          font-size: 14px;
+          color: lighten($base-black, 30%);
+          font-family: 'Open Sans', sans-serif;
+    }
+
+    .post footer{
+       margin: 10px -20px -20px;
+        padding: 15px;
+        background: #2a95a7;
+        border-top: 1px solid #e6e6e6;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        color: #fff;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+/*            -ms-flex-line-pack: justify;*/
+        align-content: space-between;
+        font-size: 15px;
+        font-family: Quattrocento,serif;
+    }
+
+    .btn-success {
+    color: #ffffff;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    }
+
+    .btn-warning {
+    color: #ffffff;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    }
+
+    .btn-success{
+    color: #ffffff;
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+    }
+
+    .clickable:hover{
+      cursor: pointer;
+    }

@@ -1,0 +1,119 @@
+.appWrapper, html, body{
+        min-height: 100vh;
+         position: relative;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: Exo\ 2,Helvetica,Arial,Lucida,sans-serif;
+        background: #eee;
+    }
+    .logoHeader{
+        display: inline-block;
+        height: 20px;
+        width: 100px;
+        background: url(csealogonocircledark.png) no-repeat;
+        background-size: contain;
+    }
+
+    .lists{
+        font-family: Open Sans;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+        color: #38b7cd;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+
+         color: #38b7cd;
+        background-color: transparent;
+    }
+
+
+    .upperSection h1{
+    font-weight: 700;
+    font-size: 3em;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    }
+
+     header{
+        text-shadow:  rgba(0,0,0,.3) 1px 2px 1px, rgba(0,0,0,.4) 1px 2px 3px;
+    }
+    .upperSection h3{
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 10px 0 0;
+    }
+    .upperSection{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+/*            -webkit-box-orient: vertical;*/
+/*            -webkit-box-direction: normal;*/
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+/*            -webkit-box-pack: center;*/
+/*            -ms-flex-pack: center;*/
+        justify-content: center;
+/*            -webkit-box-align: center;*/
+/*            -ms-flex-align: center;*/
+        align-items: center;
+        text-align: center;
+        padding-top: 53px;
+        padding-bottom: 10px;
+        color: #eee;
+        min-height: 35vh;
+        background-image: url('./assets/back.png');
+        background-repeat: repeat;
+        background-color: #38b7cd;
+        background-blend-mode: multiply;
+        margin: 0 0 15px;
+    }
+
+    .footer {
+        display: block;
+        background: #333;
+        border-top: 3px solid hsla(0,0%,40%,.15);
+        width: 100%;
+        height: 210px;
+        position: absolute;
+        bottom: 0;
+        padding: 30px 0;
+        font-size: 1.1em;
+        color: #fff;
+    }
+
+    .pageBody{
+        background: #fff;
+        padding: 5px 20px;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.06), 0 2px 5px 0 rgba(0,0,0,.2);
+    }
+
+    .pageBody h1{
+
+        font-weight: 500;
+        border-bottom: 3px solid #2fa7bc;
+        padding: 0 0 10px;
+        margin-bottom: 10px;
+        font-size: 32px;
+
+    }
+
+/*
+    .pageBodyContent{
+
+    }
+
+*/
+
+    .clickable{
+      cursor: pointer;
+    }
+    .pageBody p{
+        margin: 0 0 10px;
+        font-size: 17px;
+    }

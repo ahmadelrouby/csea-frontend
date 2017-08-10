@@ -1,0 +1,52 @@
+<div>
+    <section class="container-fluid upperSection">
+          <header>
+              <h1>  Notes </h1>
+<!--                <hr>-->
+              <h3> A collection of notes for all CSCE related courses. </h3>
+          </header>
+      </section>
+
+      <section class="container pageBody">
+
+          <h2>Search</h2>
+          <div>
+            <form class="form-inline" [formGroup]="form" name="courseForm">
+              <label class="control-label" style="margin-right: 3px">Course</label>
+              <select class="form-control" (change) = "get_notes()" formControlName="courses">
+                <option *ngFor = "let course of courses" [value]="course.code">{{course.name}}</option>
+              </select>
+            </form>
+
+          </div>
+
+          <div style="padding: 1em;">
+            <button routerLink = "/add-note" class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add Note</button>
+          </div>
+
+          <hr>
+          <div class="alert alert-danger alert-dismissible fade in" role="alert" style="text-align: center;" *ngIf = "empty">
+            <p style="">No Notes Founds</p>
+          </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-3" *ngFor="let note of notes">
+                <div class="thumbnail clickable" (click) ="downloadNote(note.id)"  >
+                  <!-- <a  href="#" style="text-decoration:none;"> -->
+                  <img src="./assets/writing.svg" alt="placeholder image" width="140" height="140">
+                  <!-- <hr> -->
+                  <div class="caption" style="margin-top: 3px;min-height: 10em;" >
+                    <h4>{{note.title}}</h4>
+                    <p>{{note.body}}</p>
+                  </div>
+                  <hr>
+
+                  <div class="caption">
+                    <i class="fa fa-user" aria-hidden="true" style="padding: 0 0.5em;"></i> {{note.creator}}
+                  </div>
+                <!-- </a> -->
+                </div>
+              </div>
+
+            </div>
+      </section>
+  </div>
